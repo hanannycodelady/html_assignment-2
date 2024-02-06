@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:blanchedalmond ;
+        margin: 0;
+        padding: o;
+        text-align: center;
+        padding: 200px;
+        margin: 50px auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" onsubmit="getFormValues()">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+        function getFormValues() {
+            
+        
+        var form = document.getElementById("form1");
+    
+        
+        var firstName = form.elements["fname"].value;
+        var lastName = form.elements["lname"].value;
+    
+        
+        alert("First Name: " + firstName + "\nLast Name: " + lastName);
+
+        return false;
+        }
+    </script>
+</body>
+</html>
